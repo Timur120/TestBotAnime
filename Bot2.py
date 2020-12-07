@@ -99,14 +99,13 @@ def echo_gigits(message: Message):
         with codecs.open('loh.txt', 'r', encoding='utf-8', errors='ignore') as file:
             lines = file.readlines()
         file.close()
-
         with codecs.open('loh.txt', 'w', encoding='utf-8', errors='ignore') as file:
             for i in lines:
                 if i != n:
                     file.write(i)
             file.write(a + ' ' + q + '\n')
         file.close()
-        bot.send_message(message.chat.id, 'Спасибо,' + ' ' + a + 'добавлен в список')
+        bot.send_message(message.chat.id, 'Спасибо, ваше аниме добавлено в список')
 
     elif k == 'По алфавиту':
         a = ''

@@ -34,10 +34,7 @@ def echo_gigits(message: Message):
     n=''
     a=''
     q=''
-    s=0
     y=0
-    r=0
-    w=0
     e=0
     for g in k:
         y = y+1
@@ -146,13 +143,7 @@ def echo_gigits(message: Message):
         bot.send_message (message.chat.id, c)
 
     elif k =='По рейтингу':
-        n=''
-        q=0
-        s=0
-        a=''
         lines=''
-        w=0
-        r =''
         o=''
         with codecs.open ('loh.txt','r+',encoding='utf-8', errors='ignore') as file:
             for i in file:
